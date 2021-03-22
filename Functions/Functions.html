@@ -1,20 +1,46 @@
 <!DOCTYPE html>
-
 <html>
+
 <head>
- <title>home</title>
- <script>
- document.write("Welcome To SoliCode")
- 
- </script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<script type="text/javascript">
+    function sayHello() {
+        document.write("Hello there!");
+    }
+
+    function concatenate(first, last) {
+        var full;
+        full = first + last;
+        return full;
+    }
+    function secondFunction() {
+        var result;
+        result = concatenate('Zara', 'Ali');
+        document.write(result);
+    }
+</script>
+
 </head>
 
 <body>
+    <p>Click the following button to call the function</p>
 
+    <form>
+        <input type="button" onclick="sayHello()" value="Say Hello">
+    </form>
 
+    <p>Use different text in write method and then try...</p>
+
+    <hr>
+    <p>Click the following button to call the function</p>
+    <form>
+        <input type="button" onclick="secondFunction()" value="Call Function">
+    </form>
+    <p>Use different parameters inside the function and then try...</p>
 </body>
-
-
-
 
 </html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+</head>
+
+<body>
+    <script type="text/javascript">
+        function WriteCookie() {
+            if (document.myform.customer.value == "") {
+                alert("Enter some value!");
+                return;
+            }
+            cookievalue = escape(document.myform.customer.value) + ";";
+            document.cookie = "name=" + cookievalue;
+            document.write("Setting Cookies : " + "name=" + cookievalue);
+        }
+
+    </script>
+    <form name="myform" action="">
+        Enter name: <input type="text" name="customer" />
+        <input type="button" value="Set Cookie" onclick="WriteCookie();" />
+    </form>
+    <hr>
+</body>
+
+</html>
