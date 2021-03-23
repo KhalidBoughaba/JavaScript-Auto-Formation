@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Number</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script type="text/javascript">
+        var num = 50;
+        var val = num.toExponential();
+        document.write("num.toExponential() is : " + val);
+        document.write("<br />");
+
+        val = num.toExponential(4);
+        document.write("num.toExponential(4) is : " + val);
+        document.write("<br />");
+
+        val = num.toExponential(2);
+        document.write("num.toExponential(2) is : " + val);
+        document.write("<br />");
+
+        val = 77.1234.toExponential();
+        document.write("77.1234.toExponential()is : " + val);
+        document.write("<br />");
+
+        val = 77.1234.toExponential();
+        document.write("77 .toExponential() is : " + val);
+
+
+    </script>
+</head>
+
+<body>
+    <br><br>
+    <hr>
+    <script type="text/javascript">
+        var num = 177.1234;
+        document.write("num.toFixed() is : " + num.toFixed());
+        document.write("<br />");
+
+        document.write("num.toFixed(6) is : " + num.toFixed(6));
+        document.write("<br />");
+
+        document.write("num.toFixed(1) is : " + num.toFixed(1));
+        document.write("<br />");
+
+        document.write("(1.23e+20).toFixed(2) is:" + (1.23e+20).toFixed(2));
+        document.write("<br />");
+
+        document.write("(1.23e-10).toFixed(2) is : " + (1.23e-10).toFixed(2));
+    </script>
+    <br><br>
+    <hr>
+    <script type="text/javascript">
+        num = new Number(15);
+        document.write("num.toString() is " + num.toString());
+        document.write("<br />");
+
+        document.write("num.toString(2) is " + num.toString(2));
+        document.write("<br />");
+
+        document.write("num.toString(4) is " + num.toString(4));
+        document.write("<br />");
+    </script>
+</body>
+
+</html>
